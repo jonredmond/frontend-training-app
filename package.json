@@ -1,0 +1,15 @@
+{
+  "name": "example-project",
+  "version": "1.0.0",
+  "description": "Front End Tutorial project",
+  "main": "client/index.js",
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jon Redmond",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
