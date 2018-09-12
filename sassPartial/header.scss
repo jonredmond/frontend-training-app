@@ -1,0 +1,32 @@
+header {
+    padding: 28px 32px 23px;
+
+    .menu {
+        float: right;
+    }
+    
+    @media screen and (min-width: 1024px) {
+        padding: 18px 50px 23px 70px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav {
+        float: right;
+        margin: 18px 0 12px;
+    }
+    .headerNav__item {
+        display: inline-block;
+        margin-left: 40px;
+        a {
+            color: $textColour2;
+            font-family: OpenSans-Bold;
+            font-size: 14px;
+            letter-spacing: 1.16px;
+        }
+    }
+
+    .headerNav__item.active {
+    	border-bottom: 2px solid $activeHighlight;
+    }
+}

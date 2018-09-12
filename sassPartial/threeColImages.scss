@@ -1,0 +1,13 @@
+.threeColImages {
+	background-color: $backgroundColour2;
+	padding: 60px 32px 37px;
+	text-align: center;
+
+	separator {
+		margin-bottom: 60px;
+	}
+
+	&__title {
+		text-align: left;
+	}
+}

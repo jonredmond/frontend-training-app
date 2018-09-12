@@ -1,0 +1,21 @@
+.hero {
+	background-image: url($imagesPath + "Header-bg.png");
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	padding: 60px 40px;
+	text-align: center;
+
+	&__title {
+		font-family: SapientCentroSlab-Light;
+		color: #FFFFFF;
+		font-size: 40px;
+	}
+
+	@media screen and (min-width: 1024px) {
+		padding: 238px 199px;
+
+		&__title {
+			font-size: 60px;
+		}
+	}
+}

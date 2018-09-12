@@ -1,0 +1,40 @@
+footer {
+	background-color: $footerBackground;
+	color: $footerColour;
+	font-size: 0;
+	padding: 60px 32px;
+	text-align: center;
+
+	.logo {
+		margin-bottom: 26px;
+	}
+
+	.footerSeparator {
+		border-bottom: 1px solid $footerColour;
+		width: 70px;
+		margin: 0 auto 74px;
+	}
+	
+	.footerNav {
+		margin-bottom: 30px;
+	}
+
+	.footerNav__item{
+		display: inline-block;
+		font-family: OpenSans-Bold;
+		font-size: 12px;
+		letter-spacing: 1px;
+		margin: 0 30px 20px 0;
+
+		a {
+			color: $footerColour;
+		}
+	}
+
+	.contactInfo {
+		color: $footerColour;
+		font-family: OpenSans;
+		font-size: 14px;
+		line-height: 24px;
+	}
+}

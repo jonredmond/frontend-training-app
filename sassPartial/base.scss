@@ -1,0 +1,61 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $backgroundColour1;
+	color: $textColour2;
+}
+
+h2 {
+	color: $textColour1;
+	font-family: SapientCentroSlab-Light;
+	font-size: 40px;
+	letter-spacing: -1.11px;
+
+	@media screen and (min-width: 1024px) {
+		font-size: 60px;
+	}
+}
+
+h3 {
+	font-family: OpenSans-Bold;
+	font-size: 14px;
+	color: $textColour2;
+	letter-spacing: 1.16px;
+}
+
+p {
+	color: $textColour2;
+	font-family: OpenSans;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.g-clearFix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+@media screen and (max-width: 767px) {
+	.hidden-mobile {
+		display: none !important;
+	}	
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.hidden-tablet {
+		display: none !important;
+	}	
+}
+
+@media screen and (min-width: 1024px) {
+	.hidden-desktop {
+		display: none !important;
+	}	
+}
+.g-contentWidth {
+	max-width: $contentMaxWidth;
+	margin: 0 auto;
+}

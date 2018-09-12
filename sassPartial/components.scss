@@ -1,0 +1,42 @@
+.separator {
+	border: 0;
+	border-bottom: 4px solid $separatorColour;
+	width: 40px;
+	margin: 0 0 50px;
+
+	@media screen and (min-width: 1024px) {
+		width: 60px;
+	}
+}
+
+.gridList {
+	font-size: 0;
+	padding: 60px 0 22px 50px;
+
+	&__item {
+		display: inline-block;
+		width: 50%;
+		margin-bottom: 46px;
+	}
+
+	@media screen and (min-width: 1024px) {
+		padding: 159px 0;
+		text-align: center;
+
+		&__item  {
+			width: 0;
+			padding: 0 12.5%;
+			white-space: nowrap;
+		}
+	}
+}
+
+.imgNameNLoc {
+	display: inline-block;
+	margin-right: 30px;
+	
+	&__image, &__name, &__location {
+		margin-bottom: 30px;
+	}
+
+}
