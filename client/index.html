@@ -1,37 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My First Web Application</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Landing Page</title>
+
+	<link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <header>
-    <h1>My First Web Application</h1>
-  </header>
-  <main>
-    <article>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </article>
-    <form action="/submit" method="post">
-      User name:<br>
-      <input type="text" name="username"><br>
-      User password:<br>
-      <input type="password" name="psw">
-      <br>
-      <button type="submit">Submit</button>
-    </form>
-    <ul id="usernames">
-      <li>Jonj</li>
-      <li>Edj</li>
-    </ul>
-  </main>
-  <footer>
-    <a href="https://publicis.sapient.com/en-us.html">SAPIENT</a>
-  </footer>
-</body>
+	<header>
+		<img src="images/Logo.png" alt="logo" class="logo">
+		<img src="images/menu.png" alt="menu" class="menu hidden-desktop">
+		<nav class="nav hidden-mobile hidden-tablet">
+			<ul class="headerNav">
+				<li class="headerNav__item active"><a href="javascript:void(0)">HOME</a></li>
+				<li class="headerNav__item"><a href="javascript:void(0)">ABOUT US</a></li>
+				<li class="headerNav__item"><a href="javascript:void(0)">PORTFOLIO</a></li>
+				<li class="headerNav__item"><a href="javascript:void(0)">OUR TEAM</a></li>
+				<li class="headerNav__item"><a href="javascript:void(0)">BLOG</a></li>
+				<li class="headerNav__item"><a href="javascript:void(0)">CONTACT</a></li>
+			</ul>
+		</nav>
+	</header>
 
+	<section class="hero g-contentWidth">
+		<h1 class="hero__title">Learn To Love Growth And Change And You Will Be A Success</h1>
+	</section>
+
+	<section class="twoColTitleNText g-contentWidth">
+		<div class="twoColTitleNText__titleContainer">
+			<h2 class="twoColTitleNText__title">About Us</h2>
+			<hr class="separator">
+		</div>
+		<div class="twoColTitleNText__textContainer">
+			<p class="twoColTitleNText__text">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium commodi totam culpa, dolorum asperiores iusto quidem, nesciunt hic eaque blanditiis enim, id maiores nam nobis dignissimos aliquam ad minus nisi. In, fuga blanditiis non cum cupiditate dolore, accusantium odio doloremque quibusdam dignissimos nemo sed nisi, similique, mollitia et! Autem laborum sint tenetur, earum facere veniam? 
+				<br/> <br/>
+				Sunt fugiat veniam consectetur soluta quia ex tempora quaerat, perferendis! Itaque a praesentium saepe ex distinctio aliquid quis laborum sit, porro dolor odio, iste eos laboriosam dolorum maiores harum reiciendis vitae doloribus illum voluptatibus nobis maxime assumenda ipsam tempora fugiat. Perspiciatis quibusdam hic cum tempore.
+			</p>
+		</div>
+	</section>
+	
+	<section class="twoColImgNText g-contentWidth">
+		<img src="images/img.png" alt="image" class="twoColImgNText__image">
+		<div class="twoColImgNText__titleNTextContainer">
+			<h2 class="twoColImgNText__title">Let's Make Magic</h2>
+			<hr class="separator">
+			<p class="twoColImgNText__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero veniam odio itaque. Molestiae aut dicta accusantium quod, modi ad alias enim dolor delectus iusto! Inventore tempora labore nobis doloribus optio nulla sit corrupti nostrum, tempore debitis pariatur minus maiores velit, autem ex eum distinctio error fugit. Itaque voluptatum quam veritatis fuga impedit nulla dolor. 
+			<br/> <br/>
+			Nam dignissimos, ratione odit doloribus cum porro, aut. Ipsum nisi odio voluptatum, et, reprehenderit accusamus, est provident debitis dicta ullam esse assumenda, odit? Alias architecto enim pariatur libero ipsam mollitia maiores minus quibusdam numquam perspiciatis eveniet sit dolores eligendi inventore, ea voluptatum debitis iure, repellendus iste culpa! Voluptatibus quam ipsum nisi odit deserunt qui, consectetur ducimus, quis officia quaerat sapiente dolores, ad libero! Tenetur provident, omnis.</p>
+		</div>
+	</section>
+
+	<section class="gridListSection g-contentWidth">
+		<ul class="gridList">
+			<li class="gridList__item">
+				<h2 class="gridList__value">305</h3>
+				<p class="gridList__label">Web Designs</p>
+			</li>
+			<li class="gridList__item">
+				<h2 class="gridList__value">220</h3>
+				<p class="gridList__label">Logo Designs</p>
+			</li>
+			<li class="gridList__item">
+				<h2 class="gridList__value">52</h3>
+				<p class="gridList__label">Print Designs</p>
+			</li>
+			<li class="gridList__item">
+				<h2 class="gridList__value">88</h3>
+				<p class="gridList__label">Mobile Apps</p>
+			</li>
+		</ul>
+	</section> 
+
+	<section class="threeColImages">
+		<h2 class="threeColImages__title">Our Team</h2>
+		<hr class="separator"/>
+		<article class="imgNameNLoc">
+			<img src="images/persona01.png" alt="CODY WILSON" class="imgNameNLoc__image">
+			<h3 class="imgNameNLoc__name">CODY WILSON</h3>
+			<p class="imgNameNLoc__location">Hintzport</p>
+		</article>
+		<article class="imgNameNLoc">
+			<img src="images/persona02.png" alt="ROSE PRATT" class="imgNameNLoc__image">
+			<h3 class="imgNameNLoc__name">ROSE PRATT</h3>
+			<p class="imgNameNLoc__location">Port Santoschester</p>
+		</article>
+		<article class="imgNameNLoc">
+			<img src="images/persona03.png" alt="TERRY HICKS" class="imgNameNLoc__image">
+			<h3 class="imgNameNLoc__name">TERRY HICKS</h3>
+			<p class="imgNameNLoc__location">Erdmanview</p>
+		</article>
+	</section>
+
+	<footer>
+		<img src="images/footerLogo.png" alt="logo" class="logo">
+		<hr class="footerSeparator"/>
+		<ul class="footerNav">
+			<li class="footerNav__item"><a href="javascript:void(0)">FACEBOOK</a></li>
+			<li class="footerNav__item"><a href="javascript:void(0)">TWITTER</a></li>
+			<li class="footerNav__item"><a href="javascript:void(0)">GOOGLE+</a></li>
+			<li class="footerNav__item"><a href="javascript:void(0)">BEHANCE</a></li>
+			<li class="footerNav__item"><a href="javascript:void(0)">DRIBBLE</a></li>
+			<li class="footerNav__item"><a href="javascript:void(0)">INSTAGRAM</a></li>
+		</ul>
+		<p class="contactInfo">
+			Mese Selimovica 52, Banja Luka - BiH
+			<br/><br/>
+			(00387) 65 252 222
+			<br/><br/>
+			info@mail.com
+		</p>
+	</footer>
+	
+</body>
 </html>
