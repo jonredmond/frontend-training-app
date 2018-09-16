@@ -1,3 +1,3 @@
 require('./sass/style.scss');
 
-console.log9('bundled');
+console.log('bundled');
