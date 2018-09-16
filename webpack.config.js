@@ -1,6 +1,10 @@
 const webpack = require('webpack');
 const path = require('path');
 
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 const config = {
   entry: './src/index.js',
   mode: 'development',
@@ -9,8 +13,29 @@ const config = {
     filename: 'bundle.js'
   },
   module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
+      },
+      { 
+        test: /\.(png|woff|woff2|eot|ttf|svg|otf)$/, 
+        loader: 'url-loader?limit=100000'
+      }
+    ]
   },
   plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html'
+    }),
+    new CopyWebpackPlugin([{
+      from: './src/assets/images',
+      to: 'images'
+    }])
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
