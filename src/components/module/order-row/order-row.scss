@@ -1,0 +1,24 @@
+.order-row {
+  height: 25px;
+  border-bottom: 1px solid #999999;
+}
+
+.hidden-mobile {
+  display: none;
+}
+
+.hidden-tablet {
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .hidden-mobile {
+    display: table-cell;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hidden-tablet {
+    display: table-cell;
+  }
+}

@@ -1,0 +1,39 @@
+@import "src/sass/colors";
+
+.legend-item {
+  display: block;
+  margin-bottom: 5px;
+
+  &__key {
+    display: inline-block;
+    height: 16px;
+    margin-right: 5px;
+    width: 16px;
+
+    &.executed {
+      background-color: $executedColor;
+    }
+    &.placed {
+      background-color: $placedColor;
+    }
+    &.remaining {
+      background-color: $remainingColor;
+    }
+  }
+
+  &__label {
+    font-family: Arial;
+    font-size: 12pt;
+    vertical-align: bottom;
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 20px;
+  }
+}

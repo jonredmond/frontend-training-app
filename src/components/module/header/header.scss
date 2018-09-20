@@ -1,0 +1,57 @@
+.header {
+  font-family: Arial;
+
+  hr {
+    margin: 0;
+  }
+
+  .headerRow {
+    padding: 10px;
+
+    .heading {
+      display: inline-block;
+      font-size: 16px;
+    }
+  
+    .username {
+      font-size: 16px;
+      font-style: italic;
+    }
+  
+    .signOut {
+      color: #0000FF;
+      font-size: 12px;
+      margin-left: 10px;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .actionButton {
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 25px;
+    margin-right: 10px;
+    width: 90px;
+  }
+
+  .icon {
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 10px;
+    height: 25px;
+    width: 30px;
+
+    &.tableIcon {
+      background-image: url('../../../assets/images/table.png');
+    }
+
+    &.chartIcon {
+      background-image: url('../../../assets/images/chart.png');
+    }
+  }
+}

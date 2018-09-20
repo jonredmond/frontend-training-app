@@ -3,9 +3,10 @@ const path = require('path');
 
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+require("babel-polyfill");
 
 const config = {
-  entry: './src/index.js',
+  entry: ['babel-polyfill', './src/index.js'],
   mode: 'development',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -14,12 +15,25 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader'
-        ]
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: 'babel-loader'
+      },
+      {
+        test: /\.(scss|css)$/,
+        loaders: [
+          require.resolve('style-loader'),
+          {
+            loader: require.resolve('css-loader'),
+            options: {
+              importLoaders: 1,
+              modules: true,
+              localIdentName: '[name]__[local]___[hash:base64:5]',
+            },
+          },
+          require.resolve('resolve-url-loader'),
+          require.resolve('sass-loader')
+        ],
       },
       { 
         test: /\.(png|woff|woff2|eot|ttf|svg|otf)$/, 
@@ -29,13 +43,19 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: 'src/index.html'
     }),
     new CopyWebpackPlugin([{
       from: './src/assets/images',
       to: 'images'
     }])
   ],
+  resolve: {
+    extensions: [
+      '.js',
+      '.jsx'
+    ]
+  },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,

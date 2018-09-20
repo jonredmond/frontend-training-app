@@ -1,0 +1,53 @@
+@import "src/sass/colors";
+
+.order-chart {
+  font-family: Arial;
+
+  &__id-label {
+    display: inline-block;
+    font-weight: bold;
+    width: 10%;
+  }
+
+  &__total-label {
+    display: inline-block;
+    font-weight: bold;
+    text-align: right;
+    width: 10%;
+  }
+
+  &__scale {
+    display: inline-block;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  &__order {
+    margin-bottom: 10px;
+
+    &__id {
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      vertical-align: top;
+      width: 10%;
+    }
+
+    &__bar {
+      display: inline-block;
+      height: 40px;
+      width: 80%;
+    }
+
+    &__total {
+      display: inline-block;
+      border-bottom: 3px solid $remainingColor;
+      box-sizing: border-box;
+      text-align: right;
+      height: 40px;
+      line-height: 40px;
+      vertical-align: top;
+      width: 10%;
+    }
+  }
+}

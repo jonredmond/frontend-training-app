@@ -1,0 +1,43 @@
+.chart-scale {
+  position: relative;
+  &__label {
+    font-family: Arial;
+    font-size: 12pt;
+    
+    &:nth-child(1) {
+      display: inline-block;
+      width: 10%;
+    }
+    &:nth-child(2) {
+      display: inline-block;
+      text-align: center;
+      width: 80%;
+    }
+    &:nth-child(3) {
+      display: inline-block;
+      text-align: right;
+      width: 10%;
+    }
+  }
+
+  &__tick {
+    border-right: 1px solid black;
+    box-sizing: border-box;
+    margin-right: calc(10% - 1px);
+    display: inline-block;
+    position: relative;
+    height: 5px;
+    
+    &:nth-child(10) {
+      margin-right: calc(10% - 2px);
+    }
+    &:nth-child(11) {
+      margin-right: 0;
+    }
+  }
+  &__line {
+    margin: 0;
+    width: 100%;
+    border-top: 1px solid black;
+  }
+}
