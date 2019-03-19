@@ -3,9 +3,7 @@ import React from 'react';
 import common from '../../../sass/common.scss';
 import style from './header.scss';
 
-const Header = ({
-  username
-}) => (
+const Header = ({ createOrders, deleteOrders, username }) => (
   <header className={style.header}>
     <div className={style.headerRow}>
       <div className={common.clear}>
@@ -16,11 +14,15 @@ const Header = ({
         </div>
       </div>
     </div>
-    <hr/>
+    <hr />
     <div className={style.headerRow}>
       <div className={common.clear}>
-        <button className={style.actionButton}>Trade</button>
-        <button className={style.actionButton}>Delete All</button>
+        <button className={style.actionButton} onClick={createOrders}>
+          Trade
+        </button>
+        <button className={style.actionButton} onClick={deleteOrders}>
+          Delete All
+        </button>
         <div className={common.floatRight}>
           <button className={`${style.icon} ${style.tableIcon}`} />
           <button className={`${style.icon} ${style.chartIcon}`} />
